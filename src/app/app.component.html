@@ -5,7 +5,7 @@
             <mat-radio-group name="account_type" formControlName="role">
                 <label class="mx-3 my-0">Seleccione el rol: </label>
                 <mat-radio-button class="mx-2" value="jobSeeker">
-                    contratador
+                    empleador
                 </mat-radio-button>
                 <mat-radio-button class="mx-2" value="employee">
                     empleado
@@ -13,10 +13,10 @@
             </mat-radio-group>
             <br />
             <mat-form-field class="col-5 mt-3 mx-auto">
-                <mat-label>Nombre completo</mat-label>
+                <mat-label>Nombre </mat-label>
                 <input type="text" matInput formControlName="fullName" placeholder="pepito perez" />
                 <mat-error *ngIf="registerForm.get('fullName').hasError('required')">
-                    Full Name is <strong>required</strong>
+                    el nombre complñeto es <strong>required</strong>
                 </mat-error>
             </mat-form-field>
             <br />
